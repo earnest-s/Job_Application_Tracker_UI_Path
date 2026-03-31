@@ -119,9 +119,13 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="758,2441" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1014,2441" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ugm:GmailMessage)" Name="EmailList" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt" />
@@ -202,7 +206,7 @@
             </ui:ForEach.Body>
           </ui:ForEach>
           <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Rows to write: &quot; + dt.Rows.Count.ToString]" />
-          <ui:WriteRange DataTable="[dt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="452,270" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Applications" StartingCell="A1" WorkbookPath="C:\Users\earni\Desktop\RPA\Job_Tracker.xlsx" />
+          <ui:WriteRange DataTable="[dt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="452,270" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Applications" StartingCell="A1" WorkbookPath="[Path.Combine(Environment.CurrentDirectory, &quot;Job_tracker.xlsx&quot;)]" />
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
