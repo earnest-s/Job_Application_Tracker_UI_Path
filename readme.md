@@ -88,7 +88,6 @@ This bot is ideal for:
 ## ⚠️ Note
 
 Authentication for Gmail is handled securely via UiPath.
-No credentials or sensitive data are stored in this repository.
 
 ---
 
