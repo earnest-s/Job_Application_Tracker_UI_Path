@@ -1,7 +1,17 @@
-bin/
-obj/
+# UiPath
 .local/
 .settings/
+.objects/
+.project/
+.tmh/
+
+# Build
+bin/
+obj/
+
+# Logs / temp
 *.log
 *.tmp
+
+# Lock files
 project.json.lock.json
