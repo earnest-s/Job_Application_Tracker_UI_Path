@@ -1,6 +1,0 @@
-{
-  "keywords": ["job", "apply", "hiring", "role", "opening", "interview"],
-  "excludeKeywords": ["newsletter", "alert", "digest", "security"],
-  "followUpDays": 3,
-  "excelFile": "Job_Tracker.xlsx"
-}
