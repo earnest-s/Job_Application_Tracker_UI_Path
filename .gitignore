@@ -1,0 +1,7 @@
+bin/
+obj/
+.local/
+.settings/
+*.log
+*.tmp
+project.json.lock.json
