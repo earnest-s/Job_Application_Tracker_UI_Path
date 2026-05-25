@@ -75,16 +75,6 @@ This bot is ideal for:
 
 ---
 
-## 🚧 Future Enhancements
-
-* 🧠 NLP-based email classification (replace keyword filtering)
-* 📌 Advanced duplicate detection across historical data
-* 📊 Dashboard integration for analytics & insights
-* ⏰ Automated follow-up reminders
-* ☁️ Cloud storage integration (Google Sheets / DB)
-
----
-
 ## ⚠️ Note
 
 Authentication for Gmail is handled securely via UiPath.
